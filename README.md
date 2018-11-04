@@ -58,11 +58,11 @@ Examples
 ```js
 function afunc()
 {
-	// Instantiate the arguments helper.
-	const args = new Pargras(arguments);
+    // Instantiate the arguments helper.
+    const args = new Pargras(arguments);
 
-	// Return the function arguments as an array.
-	return args.array();
+    // Return the function arguments as an array.
+    return args.array();
 }
 
 afunc(0, 1, "two", true);
@@ -74,11 +74,11 @@ afunc(0, 1, "two", true);
 ```js
 function afunc()
 {
-	// Instantiate the arguments helper.
-	const args = new Pargras(arguments);
+    // Instantiate the arguments helper.
+    const args = new Pargras(arguments);
 
-	// Return the number of arguments passed to function.
-	return args.length();
+    // Return the number of arguments passed to function.
+    return args.length();
 }
 
 afunc(0, 1, "two", true);
@@ -90,22 +90,22 @@ afunc(0, 1, "two", true);
 ```js
 function afunc()
 {
-	// Instantiate the arguments helper.
-	const args = new Pargras(arguments);
+    // Instantiate the arguments helper.
+    const args = new Pargras(arguments);
 
-	// Check value.
-	args.get(1);
-	// -> "banana"
+    // Check value.
+    args.get(1);
+    // -> "banana"
 
-	// Alter second argument value.
-	args.set(1, 'altered');
+    // Alter second argument value.
+    args.set(1, 'altered');
 
-	// Check value again.
-	args.get(1);
-	// -> "altered"
+    // Check value again.
+    args.get(1);
+    // -> "altered"
 
-	// Return sorted arguments.
-	return args.array().sort();
+    // Return sorted arguments.
+    return args.array().sort();
 }
 
 afunc("peach", "banana", "apple");
@@ -117,18 +117,18 @@ afunc("peach", "banana", "apple");
 ```js
 function afunc()
 {
-	// Instantiate the arguments helper.
-	const args = new Pargras(arguments);
+    // Instantiate the arguments helper.
+    const args = new Pargras(arguments);
 
-	// Alter arguments.
-	// a) Remove first argument.
-	// b) Remove last argument.
-	// c) Prepend argument 'one'.
-	// d) Append argument 'four'.
-	args.shift().pop().unshift('one').push('four');
+    // Alter arguments.
+    // a) Remove first argument.
+    // b) Remove last argument.
+    // c) Prepend argument 'one'.
+    // d) Append argument 'four'.
+    args.shift().pop().unshift('one').push('four');
 
-	// Apply to console.log().
-	args.applyTo(console.log);
+    // Apply to console.log().
+    args.applyTo(console.log);
 }
 
 afunc(1, 2, 3, 4);
