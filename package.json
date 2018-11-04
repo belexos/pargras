@@ -1,0 +1,50 @@
+{
+  "name": "pargras",
+  "version": "1.0.0",
+  "description": "Pargras is a minimalistic helper around function arguments for Node.js and the Browser. Pargras has a fluent interface and supports adding, removing and altering arguments before applying them to a function.",
+  "main": "pargras.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nyc ./node_modules/.bin/jasmine",
+    "build": "grunt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belexos/pargras.git"
+  },
+  "keywords": [
+    "function",
+    "argument",
+    "arguments",
+    "helper",
+    "fluent",
+    "add",
+    "remove",
+    "alter",
+    "apply",
+    "array",
+    "length"
+  ],
+  "author": "Br00ze <br00ze@belexos.com> (http://belexos.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/belexos/pargras#readme",
+  "nyc": {
+    "exclude": [
+      "**/*Spec.js"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "jasmine": "^3.1.0",
+    "nyc": "^11.9.0"
+  }
+}
