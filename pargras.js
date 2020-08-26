@@ -1,13 +1,14 @@
 /**
- * Pargras - Minimalistic helper around function arguments for Node.js and the Browser.
+ * Pargras - Minimalistic helper around function arguments for Node.js and the browser.
  *
- * @copyright: Copyright (c) 2016-present, Belexos GmbH
+ * @copyright: Copyright (c) 2016-present, Belexos
  *
  * @author: Br00ze <br00ze@belexos.com> (http://belexos.com)
  *
  * @license This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+
 
 (function(window)
 {
@@ -24,7 +25,7 @@
 	}
 
 	/**
-	 * Pargras is a minimalistic helper around function arguments for Node.js and the Browser.
+	 * Pargras is a minimalistic helper around function arguments for Node.js and the browser.
 	 * Pargras has a fluent interface and supports adding, removing and altering arguments
 	 * before applying them to a function.
 	 *
@@ -182,7 +183,7 @@
 
 		function isArguments(value)
 		{
-			return value != null && typeof value === 'object' && Object.prototype.hasOwnProperty.call(value, 'callee')
+			return value != null && typeof value === 'object' && Object.prototype.hasOwnProperty.call(value, 'callee');
 		}
 	}
 })(this);

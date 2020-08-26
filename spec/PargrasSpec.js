@@ -1,3 +1,14 @@
+/**
+ * Pargras - Minimalistic helper around function arguments for Node.js and the browser.
+ *
+ * @copyright: Copyright (c) 2016-present, Belexos
+ *
+ * @author: Br00ze <br00ze@belexos.com> (http://belexos.com)
+ *
+ * @license This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 
 var Pargras = Pargras || require('../pargras');
 
